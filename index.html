@@ -1,0 +1,168 @@
+<html>
+ 
+<head>
+    <title>Simple DataTable Customization with Bootstarp</title>
+ 
+    <!--Jquery CDN-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ 
+    <!--DataTable CDN-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+ 
+    <!-- Bootstrap CSS CDN -->
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   
+</head>
+ 
+<body style="margin-top: 30px">
+ 
+    <div class="container">
+        <div class="col-lg-4">
+ 
+            <input type="text" id="myCustomSearchBox" class="form-control" placeholder="Search Anything here">
+        </div>
+ 
+        <div class="col-lg-2">
+            <span class="input-group-btn">
+			<button class="btn btn-primary">Button 1</button>
+			<button class="btn btn-info">Button 2</button>
+		    </span>
+        </div>
+ 
+        <div class="col-lg-6">
+            <div class="input-group">
+ 
+                <select id="listsearch" class="form-control" style="width:40%">
+                    <option value="0">Select Filter</option>
+                    <option value="name">Name</option>
+                    <option value="id">ID</option>
+                    <option value="birthday">birthday</option>
+                </select>
+ 
+                <input type="text" name="value" id="value" class="form-control" style="width:60%" placeholder="Enter Filter Value">
+ 
+                <span class="input-group-btn">
+				    <button class="btn btn-secondary"><i class="glyphicon glyphicon-search"></i></button>
+				</span>
+            </div>
+        </div>
+    </div>
+    <!--Container Ends Here-->
+ 
+    <!--datatable div starts here-->
+    <div style="margin-top: 30px">
+
+      <h2>Data Render</h2>
+      <table id="dataRender">
+        <thead>
+          <tr>
+            <th>Product</th>
+            <th>Creator</th>
+            <th>Created</th>
+          </tr>
+         
+        </thead>
+      
+      </table>
+
+
+     <hr>
+        <table id="myTable">
+           <thead>
+             <tr>
+               <th>SN</th>
+               <th>First Name</th>
+               <th>Second Name</th>
+               <th>Date of Birth</th>
+               <th>Ocupation</th>
+
+             </tr>
+
+
+           </thead>
+           <tbody>
+             <tr>
+               <td>01</td>
+               <td>Bassel</td>
+               <td>Kotaish</td>
+               <td>2-2-2021</td>
+               <td>Painter</td>
+             </tr>
+             <tr id="two"">
+              <td >02 </td>
+              <td>Kasem</td>
+              <td>Hetr</td>
+              <td>2-2-2021</td>
+              <td>Writer</td>
+            </tr>
+            <tr>
+              <td style="display:table-cell">03</td>
+              <td>Husnain</td>
+              <td>OPOIL</td>
+              <td>2-2-2021</td>
+              <td>Engineer</td>
+            </tr>
+            <tr>
+              <td>04</td>
+              <td>Jamal</td>
+              <td>Banda</td>
+              <td>2-2-2021</td>
+              <td>Designer</td>
+            </tr>
+
+
+
+           </tbody>
+        </table>
+        <div >
+          <button id="cta">Action</button>
+
+        </div>
+        <div id="me">
+          <a href="bassel">jQuery</a>
+
+          <table id="geoCanada">
+            <thead>
+              <tr>
+                <td>ER_COUNT_2021-2023</td>
+                <td>ER_COUNT_2022-2024</td>
+                <td>GEO_NAME_EN</td>
+                <td>PT_COUNT_2021-2023</td>
+                <td>PT_COUNT_2022-2024</td>
+                <td>RATING_3_STARS</td>
+                <td>RATING_5_STARS</td>
+                <td>index</td>
+              </tr>
+            </thead>
+          </table>
+
+          <table id="example" class="display" style="width:100%">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Position</th>
+                    <th>Office</th>
+                    <th>Extn.</th>
+                    <th>Start date</th>
+                    <th>Salary</th>
+                </tr>
+            </thead>
+           
+        </table>
+     
+
+        
+<p>Sum of all arguments:</p>
+<p id="demo"></p>
+          
+        
+       
+
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="datamy.js"></script>
+  
+</body>
